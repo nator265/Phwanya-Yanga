@@ -6,7 +6,7 @@ const header = () => {
         <div className=''>
           Phwanya Yanga
         </div>
-        <div className='menu sm:hidden md:block '>
+        <div className='menu hidden md:block '>
           take the menu from the database
         </div>
         <div className='mobileMenu md:hidden'>
