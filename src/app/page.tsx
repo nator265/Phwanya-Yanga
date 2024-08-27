@@ -11,7 +11,7 @@ export default function Home() {
 
       <div className="h-[80vh] w-[100wh] md:hidden overflow-hidden">
         <div className="border h-[80vh] w-[100wh] overflow-hidden relative top-0 z-1">
-          <Image
+          {/* <Image
           src="/burger.png"
           alt="Juicy Burger"
           layout="responsive"
@@ -19,7 +19,7 @@ export default function Home() {
           width={200}
           objectFit="cover"
           quality={100}
-          /> 
+          />  */}
         </div>
       </div>
 
