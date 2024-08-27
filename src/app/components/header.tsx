@@ -10,21 +10,29 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
 import { HiBars3 } from "react-icons/hi2";
+import {easeInOut, easeOut, motion} from 'framer-motion'
 
 const header = () => {
   // eslint-disable-next-line react-hooks/rules-of-hooks
   const { setTheme } = useTheme()
   return (
     <div className='py-4 px-5 display flex justify-between'>
-        <div className=''>
+        <motion.div initial={{ opacity:0, x: -100 }}
+         animate={{ opacity:1, x: 0 }}
+         transition={{ duration: 1, ease:"easeOut"}}>
           <h1 className='md:text-2xl text-xl'>
             Phwanya Yanga
           </h1>
-        </div>
-        <div className='flex'>
+        </motion.div>
+
+        <motion.div initial={{ opacity:0, x: 100 }}
+         animate={{ opacity:1, x: 0 }}
+         transition={{ duration: 1, ease:"easeOut"}}
+         className='flex'>
           <div className='menu hidden md:block '>
             take the menu from the database
           </div>
+
           <div className='themeSwitch '>
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
@@ -47,10 +55,11 @@ const header = () => {
               </DropdownMenuContent>
             </DropdownMenu>  
           </div>
-          <div className='mobileMenu md:hidden'>
-            <HiBars3 size={40}/>
+
+          <div className='mobileMenu md:hidden align-middle'>
+            <HiBars3 size="35" />
           </div>
-        </div>
+        </motion.div>
     </div>
   )
 }
