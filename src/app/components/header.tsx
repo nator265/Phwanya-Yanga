@@ -17,7 +17,7 @@ const header = () => {
   const { setTheme } = useTheme()
   return (
     <div className='py-4 px-5 display flex justify-between'>
-        <motion.div initial={{ opacity:0, x: -130 }}
+        <motion.div initial={{ opacity:0, x: -100 }}
          animate={{ opacity:1, x: 0 }}
          transition={{ duration: 1, ease:"easeOut"}}>
           <h1 className='md:text-2xl text-xl'>
@@ -25,7 +25,7 @@ const header = () => {
           </h1>
         </motion.div>
 
-        <motion.div initial={{ opacity:0, x: 130 }}
+        <motion.div initial={{ opacity:0, x: 100 }}
          animate={{ opacity:1, x: 0 }}
          transition={{ duration: 1, ease:"easeOut"}}
          className='flex'>
