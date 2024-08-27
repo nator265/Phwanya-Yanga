@@ -9,10 +9,10 @@ export default function Home() {
     <main className="">
       <Header />
 
-      <div className="h-[80vh] w-[100wh] md:hidden overflow-hidden">
-        <div className="border h-[80vh] w-[100wh] overflow-hidden relative top-0 z-1">
+      <div className="h-[90vh] w-[100wh] md:hidden overflow-hidden">
+        <div className="border h-[90vh] w-[100wh] overflow-hidden relative top-0 z-1">
           <Image
-          src="/burger.png"
+          src="/burger.jpg"
           alt="Juicy Burger"
           layout="responsive"
           height={200}
@@ -24,17 +24,14 @@ export default function Home() {
       </div>
 
       <div className='h-[90vh] w-[100wh] hidden md:flex overflow-hidden'>
-        <div className="w-[40%] h-[80vh]">
-
-        </div>
         <motion.div 
-          className="border h-[90vh] w-[60%] overflow-hidden bg-cover bg-center" 
-          style={{ backgroundImage: 'url(/burger.png)' }}
+          className="border h-[90vh] w-[100%] overflow-hidden bg-cover bg-center" 
+          style={{ backgroundImage: 'url(/burger.jpg)' }}
           initial={{ opacity: 0, x: -100 }} 
           animate={{ opacity: 1, x: 0 }} 
           transition={{ duration: 1, ease: "easeOut" }}
         >
-        {/* Content can go here */}
+
         </motion.div>
       </div>
     </main>
