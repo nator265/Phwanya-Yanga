@@ -27,9 +27,9 @@ export default function Home() {
               </div>
             </div>
             <div className='mt-10 p-5 bg-[#0000006b] backdrop-blur-md w-[100%] h-[50%] text-center'>
-              <p>
+              <h2>
                 Hot Deals
-              </p> 
+              </h2> 
             </div>
           </div>
         </motion.div>
