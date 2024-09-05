@@ -62,6 +62,9 @@
 h1{
   font-size: large
 }
+h2{
+  font-size: large
+}
 
 @layer base {
   * {
